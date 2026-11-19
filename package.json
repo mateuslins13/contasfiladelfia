@@ -1,0 +1,26 @@
+{
+  "name": "prestacao-contas-filadelfia",
+  "version": "2.0.0",
+  "description": "Painel local das prestações de contas do Edifício Filadelfia. Os PDFs nunca saem da máquina.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node server.mjs",
+    "dev": "node build.mjs && node server.mjs",
+    "extrai": "node tools/extrai.mjs",
+    "confere": "node tools/confere.mjs",
+    "confere:escuro": "node tools/confere.mjs --tema dark",
+    "confere:celular": "node tools/confere.mjs --largura 390",
+    "confere:pdf": "node tools/confere-pdf.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "4.4.3",
+    "pdfjs-dist": "4.6.82",
+    "pdfjs-dist-umd": "npm:pdfjs-dist@3.11.174"
+  },
+  "devDependencies": {
+    "puppeteer-core": "23.11.1"
+  }
+}

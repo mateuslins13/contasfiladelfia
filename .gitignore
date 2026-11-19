@@ -1,0 +1,20 @@
+# Prestações de contas em PDF e dados extraídos nunca vão para o repositório.
+# Ignora o conteúdo da pasta, mas mantém a pasta no repositório.
+# (excluir "prestacao-de-contas/" inteiro impediria reincluir o .gitkeep)
+prestacao-de-contas/*
+!prestacao-de-contas/.gitkeep
+*.pdf
+*.csv
+dados.json
+src/dados.json
+
+# Build gerado localmente (recriado com: npm run build)
+index.html
+_site/
+
+node_modules/
+conferencia-*.png
+.chrome-conferencia/
+.teste-pdf/
+.DS_Store
+Thumbs.db
